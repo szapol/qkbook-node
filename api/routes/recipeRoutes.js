@@ -3,9 +3,10 @@ export default function(app) {
     var controller = require('../controllers/recipeController');
 
     app.route('/recipe')
-        .get(controller.getAll);
+        .get(controller.index)
+        .post(controller.store);
 
     app.route('/recipe/:id')
-        .get(controller.get);
+        .get(controller.show)
   }
   
