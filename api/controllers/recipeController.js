@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-var Recipe = mongoose.model('Recipes');
+var Recipe = mongoose.model('Recipe');
 
 export function index(req, res) {
 
